@@ -28,4 +28,8 @@
 #### **`\logits_difference`**
 - This folder contains one CSV file for each table in `test.all_table_col_type.json`. Each CSV file has the logits differences obtained by the original logits of all the entities in the given table. 
   - Logit difference of entity A = Original logit of the correct column type - Logit of the correct column type after masking entity A.
+ 
+### Doduo
+- !python doduo/predict_multi.py model/turlturl-re-colpair_mosato_bert_bert-base-uncased-bs16-ml-16__turl-1.00_turl-re-1.00=turl
+- !python doduo/train_multi.py --tasks turl --max_length 32 --batch_size 16 --epoch 100
 
